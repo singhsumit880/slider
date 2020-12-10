@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>car_Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+<style>
+body{
+  background-color: black;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+   
+        overflow-x: hidden;
+      }
+      #slider {
+        width: 90%;
+        height: 480px;
+        margin: 50px auto;
+        box-shadow: 0px 0px 10px 3px grey;
+        position: relative;
+      }
+
+      div#slider {
+        overflow: hidden;
+      }
+
+      div#slider figure img {
+        width: 20%;
+        height: 100%;
+        float: left;
+      }
+
+      div#slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        transition: 1s ease-in-out;
+        height: auto;
+      }
+
+      .btn-next,
+      .btn-prev {
+        position: absolute;
+        top: 45%;
+        cursor: pointer;
+        color: white;
+
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+      }
+
+      .btn-prev {
+        left: 0px;
+      }
+      .btn-next {
+        right: 0px;
+      }
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="car2b.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    CARS
+  </a>
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" style="border-radius: 5%;" href="#">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="border-radius: 5%;" href="#">FEATURES</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="border-radius: 5%;" href="#">PRICING</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" style="border-radius: 5%;" href="#">KNOW MORE</a>
+  </li>
+</ul>
+</nav>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="car2.jpeg" alt="Los Angeles" width="100%" height="580px" style="opacity:0.95;">
+      <div class="carousel-caption">
+        <h1>Audi</h1>
+        <h3>Being Ahead through Technology</h3>
+        <button type="button" class="btn btn-light" style="border-radius: 5%">Read More</button>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="benzbg.png" alt="Chicago" width="100%" height="580px" style="opacity:0.95;">
+      <div class="carousel-caption">
+        <h1>Mercedes-Benz</h1>
+        <h3>The best or nothing</h3>
+        <button type="button" class="btn btn-light" style="border-radius: 5%">Read More</button>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="car0.jpeg" alt="New York" width="100%" height="580px" style="opacity:1;">
+      <div class="carousel-caption">
+        <h1>Hyundai</h1>
+        <h3>New Thinking, New Possibilities</h3>
+        <button type="button" class="btn btn-light" style="border-radius: 5%">Read More</button>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
+
+
+
+<div id="slider">
+  <figure>
+    <img src="1.jpg" height="400px" width="900px" />
+    <img src="7.jpg" height="400px" width="900px" />
+    <img src="3.jpg" height="400px" width="900px" />
+    <img src="4.jpg" height="400px" width="900px" />
+    <img src="5.jpg" height="400px" width="900px" />
+  </figure>
+  <button class="btn-prev"><i class="fa fa-arrow-circle-left"></i></button>
+  <button class="btn-next"><i class="fa fa-arrow-circle-right"></i></button>
+</div>
+
+
+
+
+
+
+
+
+<div class="row featurette mt-5">
+<div class="col-md-5" >
+<b class="ml-5">About</b>
+<h2 class="featurette-heading ml-5" style="color:white ">We all want our <br>jobs to run <br>smoothly.</h2>
+<p class="lead ml-5" style="color: white;">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+<button class="about-button ml-5" style="border-radius: 50%; background-color: black; color: white;">Read More</button>
+</div>
+<div class="col-md-5">
+<span class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
+<div class="bordering" style="background-image: url('carb.png'); height: 300px; width: 70%; border-bottom-left-radius: 10%; border-top-left-radius: 10%; border-bottom-right-radius: 15%; border-top-right-radius: 45%;">
+
+<div style="height: 250px; width: 80%; border-bottom-left-radius: 10%; border-top-left-radius: 10%; border-top-right-radius: 15%; border-bottom-right-radius: 45%; margin-left: 150px; border: 2px solid white;"></div>
+</div>
+
+</span>
+</div>
+</div>
+
+<div id="services" class="container-fluid text-center" style="color: white;">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>SECURITY</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:white;">HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
+<div class="row featurette mt-5">
+<div class="col-md-5">
+<span class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect>
+<div class="bordering" style="background-image: url('car2b.png'); height: 300px; width: 80%; border-bottom-left-radius: 10%; border-top-left-radius: 10%; border-bottom-right-radius: 15%; border-top-right-radius: 45%;">
+
+<div style="height: 250px; width: 80%; border-bottom-left-radius: 10%; border-top-left-radius: 10%; border-top-right-radius: 15%; border-bottom-right-radius: 45%; margin-left: 100px; border: 2px solid white; padding-top: 20px;"></div>
+</div>
+
+</span>
+</div>
+<div class="col-md-7" >
+<b class="mr-7">THE CAR</b>
+<h2 class="featurette-heading ml-7" style="color:white ">We all love<br>SPEED</h2>
+<p class="lead mr-7" style="color: white;">A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of cars say that they run primarily on roads, seat one to eight people, have four tires, and mainly transport people rather than goods.Cars came into global use during the 20th century, and developed economies depend on them. The year 1886 is regarded as the birth year of the modern car when German inventor Karl Benz patented his Benz Patent-Motorwagen.</p>
+<button class="about-button ml-7" style="border-radius: 50%; background-color: black; color: white;">Read More</button>
+</div>
+</div>
+
+<h1 style="text-align: center; color: white;">Few words from Our Amazing customers</h1>
+<br>
+<div class="card-deck" style="background-color: black; color: white;">
+  <div class="card" style=" background-color: black">
+    <img src="r3b.png" class="card-img-top" alt="..." style="border-radius: 50%">
+      <h2 class="card-title" style=" text-align: center; color: white">Someone XYZ</h2>
+      <p class="card-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+      
+  </div>
+  <div class="card" style=" background-color: black; color: white">
+    <img src="r3b.png" class="card-img-top" alt="..." style="border-radius: 50%">
+    
+      <h2 class="card-title" style="text-align: center;">Someone PQR</h2>
+      <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.</p>
+      
+  </div>
+  <div class="card" style=" background-color: black; color: white">
+    <img src="r3b.png" class="card-img-top" alt="..." style="border-radius: 50%">
+      <h2 class="card-title" style=" text-align: center;">Someone ABC</h2>
+      <p class="card-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>   
+  </div>
+</div>
+</div>
+
+
+<div class="container-fluid mt-2">
+<div class="row" style="background: linear-gradient(to right,
+#9933ff 0%, #ff0000 105%);">
+<div class="col-12 col-sm-8" style="size: 60%;">
+<h1>You Want to be Notified When We Launch</h1>
+</div>
+<div class="col-12 col-sm-4">
+<button class="btn btn-outline-success m-5 align-middle text-center" type="submit" style="background-color:white;
+color:#ec0562">Sign Up Today</button>
+
+
+</div>
+
+</div>
+<div id="signUp" class="row">
+<div class="col-12 col-sm-6 text-center text-light" style="margin-top: 10%;">
+<p style="letter-spacing: 4px;">05//SIGN UP</p>
+<h2>CREATIVE WITH THIS REVOLUTIONARY TOOL</h2>
+
+</div>
+<div class="col-12 col-sm-6 mt-2 center-div">
+<form class="form-group mt-5">
+<div class="form-group w-50 text-light">
+<label for="name">Name</label>
+<input type="text" class="form-control" id="Name" placeholder="Name" style="background-color:#ffccdd">
+
+<label for="Email">Email</label>
+<input type="email" class="form-control" id="Email" placeholder="@" style="background-color:
+#ffccdd">
+
+<label for="message">message</label>
+<input type="text" class="form-control" id="message" placeholder="message" style="background-color:
+#ffccdd"><br>
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:
+#ec0562;color:white;width:100%;height:80%">Submit</button>
+</div>
+
+
+</form>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+<section class="cid-qv5AKiwkDE" id="footer1-3f" data-rv-view="8781">
+    <div class="mbr-overlay" style="background-color: rgb(70, 80, 82); opacity: 0.7;"></div>
+
+    <div class="container">
+        <div class="media-container-row content text-white">
+            <div class="col-12 col-md-3">
+                <div class="media-wrap">
+                        <img src="alogo.png" alt="Mobirise" media-simple="true" height="90" width="90">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Address
+                </h5>
+                <p class="mbr-text">
+                    1234 Gomti Nagar
+                    <br>lucknow, 
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Contacts
+                </h5>
+                <p class="mbr-text">
+                    Email: cedcoss@traninee.com
+                    <br>Phone: +91 464745657
+                </p>
+            </div>
+            <div class="col-12 col-md-3 mbr-fonts-style display-7">
+                <h5 class="pb-3">
+                    Links
+                </h5>
+                <p class="mbr-text">
+                    <br><a class="text-white" href="#">BUY</a>
+                    <br><a class="text-white" href="#">Explore More</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="media-container-row">
+                <div class="col-sm-12">
+                    <hr>
+                </div>
+            </div>
+            <div class="media-container-row mbr-white">
+                <div class="col-sm-6 copyright">
+                    <p class="mbr-text mbr-fonts-style display-7">
+                        © Copyright 2020 Cedcoss Trainee - All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</footer>  
+
+<script>
+  $(document).ready(function () {
+    var x = 0;
+    $(".btn-next").click(function () {
+      x = x <= 300 ? x + 100 : 0;
+      $("figure").css("left", -x + "%");
+      console.log(x);
+    });
+    $(".btn-prev").click(function () {
+      x = x >= 100 ? x - 100 : 400;
+      $("figure").css("left", -x + "%");
+    });
+  });
+</script>
+</body>
+</html>
